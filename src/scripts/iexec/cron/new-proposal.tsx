@@ -19,7 +19,7 @@ const setCron = async () => {
     throw new Error('Private key is not set');
   }
   try {
-    const response = await getProposalsFromPlatformServices(platformId);
+    const response = await getProposalsFromPlatformServices(platformId, '1');
     const nonSentProposalIds: IProposal[] = [];
 
     // Check if some proposals are not already in the DB
