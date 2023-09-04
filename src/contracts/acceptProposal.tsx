@@ -3,9 +3,9 @@ import { Contract, ethers, Signer } from 'ethers';
 import { toast } from 'react-toastify';
 import TransactionToast from '../components/TransactionToast';
 import { config } from '../config';
+import { showErrorTransactionToast } from '../utils/toast';
 import ERC20 from './ABI/ERC20.json';
 import TalentLayerEscrow from './ABI/TalentLayerEscrow.json';
-import { showErrorTransactionToast } from '../utils/toast';
 
 export const validateProposal = async (
   signer: Signer,
